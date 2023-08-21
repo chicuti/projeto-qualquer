@@ -1,0 +1,34 @@
+body{
+	background-color: lightpink;
+	color: white;
+	text-align: center;
+}
+p{
+	font-size: 30px;
+	font-weight: bold;
+}
+.box{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+
+	font-family: "Hass Grot Text R web", "Helvetica", sans-serif;
+}
+.buttons{
+	display: block;
+	width: 200px;
+	margin-left: 43%;
+	margin-top: 20%;
+}
+button{
+	font-size: 18px;
+  font-weight: 600;
+  background-color: red;
+  border-radius: 12px;
+  border: 0;
+  color: white;
+}
+a{
+		text-decoration: none;
+		color: white;
+}
