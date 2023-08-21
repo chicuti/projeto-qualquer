@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Uma Pergunta Rápida</title>
+</head>
+<body>
+	<div class="box">
+		<h1>POSSO TE FAZER FELIZ??</h1>
+	</div>
+	<div class="buttons">
+		<button class="button button-1" id="sim"><a href=https://youtu.be/uzSme3PRhZ0>Sim</a></button>
+		<button class="button button-2" id="nao">Não</button>
+	</div>
+</body>
+
+
+		<script type="text/javascript">
+			let naoButton = document.getElementById("nao")
+			let simButton = document.getElementById("sim")
+
+			simButton.addEventListener("click", ()=> {
+				alert("Já que voçê apertou 'sim', agora fique com essa musiquinha Gatinha!!");
+			});
+
+			let handleNao = () => {
+				naoButton.style.position = "fixed";
+
+				let rand = Math.random();
+
+				let randTop =
+				(rand * window.innerHeight) %
+				(window.innerHeight - naoButton.offsetHeight);
+				let randLeft =
+				(window.innerWidht * rand * 10) %
+				(window.innerWidht - naoButton.offsetWidth);
+
+
+			naoButton.style.top = `${randTop}px`;
+			naoButton.style.left = `${randLeft}px`;
+		};
+
+
+		naoButton.addEventListener("click", handleNao)
+		naoButton.addEventListener("mouseover", handleNao)
+		</script>
+</html>
